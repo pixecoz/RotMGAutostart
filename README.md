@@ -9,3 +9,6 @@ Little instruction:
 5. Run `.py` file and have fun!
 
 Works fine on Windows 11 with python 3.12.
+
+Known issues:
+- Doesn't work when game needs to update.
