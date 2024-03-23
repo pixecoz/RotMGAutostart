@@ -6,9 +6,6 @@ Little instruction:
 2. Make sure Python and pip installed on your machine.
 3. Open console. (Win+R, then cmd)
 4. Move to the folder with downloaded files and run `pip install -r requirements.txt` command.
-5. Run `.py` file and have fun!
+5. Run `.pyw` file and have fun!
 
 Works fine on Windows 11 with python 3.12.
-
-Known issues:
-- Doesn't work when game needs to update.
