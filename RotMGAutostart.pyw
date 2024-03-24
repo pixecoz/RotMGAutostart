@@ -11,11 +11,15 @@ def check_if_process_running(process_name):
 
 pyautogui.useImageNotFoundException()
 
+a = 0
+b = 0
+
 os.startfile("steam://rungameid/200210")
 
-while True:
+while a <= 120:
     try:
         location = pyautogui.locateOnScreen('play.png')
+        pyautogui.click(location)
         break
     except pyautogui.ImageNotFoundException:
         try:
@@ -23,14 +27,14 @@ while True:
             pyautogui.click(location)
         except pyautogui.ImageNotFoundException:
             pass
+        a += 1
         time.sleep(1)
 
-pyautogui.click(location)
-
-while True:
+while b <= 120:
     if check_if_process_running('RotMG Exalt.exe'):
         os.system('TASKKILL /F /IM "steam.exe"')
         os.system('TASKKILL /F /IM "RotMG Exalt Launcher.exe"')
         break
     else:
+        b += 1
         time.sleep(1)
