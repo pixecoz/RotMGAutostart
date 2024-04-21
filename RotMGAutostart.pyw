@@ -32,6 +32,7 @@ while a <= 120:
 
 while b <= 120:
     if check_if_process_running('RotMG Exalt.exe'):
+        time.sleep(5)
         os.system('TASKKILL /F /IM "steam.exe"')
         os.system('TASKKILL /F /IM "RotMG Exalt Launcher.exe"')
         break
