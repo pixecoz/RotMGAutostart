@@ -1,5 +1,5 @@
 # RotMGAutostart
-Launches Realm of the Mad God (Steam version) via Python script.
+Launches Realm of the Mad God (Steam version) via Python script. After successful launch kills Steam and launcher processes.
 
 Little instruction:
 1. Download files `update.png` & `play.png` & `RotMGAutostart.pyw` & `requirements.txt`, then put them in _one_ folder.
