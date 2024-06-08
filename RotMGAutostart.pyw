@@ -11,8 +11,7 @@ def check_if_process_running(process_name):
 
 pyautogui.useImageNotFoundException()
 
-a = 0
-b = 0
+a = b = 0
 
 os.startfile("steam://rungameid/200210")
 
