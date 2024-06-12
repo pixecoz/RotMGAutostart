@@ -8,4 +8,8 @@ Little instruction:
 4. Move to the folder with downloaded files and run `pip install -r requirements.txt` command.
 5. Run `.pyw` file and have fun!
 
+If steam force you to choose an account, you can try disable following setting:
+
+`Steam > Settings > Interface > Ask which account to use each time Steam starts`
+
 Works fine on Windows 11 with python 3.12.
