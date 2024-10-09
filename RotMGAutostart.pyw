@@ -36,6 +36,7 @@ def script():
                     os.system('TASKKILL /F /IM "steam.exe"')
                 os.system('TASKKILL /F /IM "RotMG Exalt Launcher.exe"')
                 break
+            time.sleep(1)
 
 def start_script():
     pyautogui.useImageNotFoundException()
