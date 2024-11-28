@@ -10,11 +10,13 @@ Launches Realm of the Mad God (Steam version) using Python. After successful lau
 
 ### To disable killing steam app (if you want to keep steam overlay for example):
 1. Open the `RotMGAutostart.pyw` file with any kind or text editor (it can be even a default Windows notepad)
-2. Change `KILL_STEAM` value to `False`, this is all thing!
+2. Change `KILL_STEAM` value to `False` (it's case-sensitive!), this is all thing!
 
 ## troubleshooting:
 If steam force you to choose an account, you can try disable following setting:
 
 `Steam > Settings > Interface > Ask which account to use each time Steam starts`
+
+If game launched, but you didn't load into the game, try increasing `KILL_TIMEOUT` value (60 seconds by default), similar to disabling killing steam app.
 
 _Works fine on Windows 11 with python version 3.12_

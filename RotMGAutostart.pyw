@@ -6,6 +6,7 @@ import psutil
 # You can change this value to "False" if you want to keep the steam app running
 # Default value is "True"
 KILL_STEAM = True
+KILL_TIMEOUT = 60 # In seconds
 
 def check_if_process_running(process_name):
     for process in psutil.process_iter(['name']):
@@ -31,7 +32,7 @@ def script():
                 pass
         finally:
             if check_if_process_running('RotMG Exalt.exe'):
-                time.sleep(20)
+                time.sleep(KILL_TIMEOUT)
                 if KILL_STEAM:
                     os.system('TASKKILL /F /IM "steam.exe"')
                 os.system('TASKKILL /F /IM "RotMG Exalt Launcher.exe"')
